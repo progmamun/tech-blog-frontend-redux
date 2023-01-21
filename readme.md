@@ -12,6 +12,7 @@
 - `yarn add -D tailwindcss postcss autoprefixer`
 - `yarn tailwindcss init -p`
 - `yarn add -D @tailwindcss/forms`
+- `yarn add @redux-devtools/extension`
 
 ## tailwindcss
 

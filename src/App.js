@@ -1,7 +1,20 @@
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { RouterProvider } from "react-router-dom";
 import "./App.css";
+import routes from "./routes/routes";
 
 function App() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch();
+  }, [dispatch]);
+  return (
+    <div>
+      <RouterProvider router={routes} />
+    </div>
+  );
 }
 
 export default App;
