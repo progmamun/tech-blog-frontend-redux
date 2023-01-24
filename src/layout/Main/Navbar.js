@@ -24,10 +24,10 @@ const Navbar = () => {
           </button>
         </li>
         <li>
-          <Link to="/top-rated">Top Rated</Link>
+          <Link to="/top-rated">Top-Rated</Link>
         </li>
         <li>
-          <Link to="/dashboard">Admin Control</Link>
+          <Link to="/dashboard">Dashboard</Link>
         </li>
         <Link to="/">
           <li title="Wishlist" className="bg-indigo-500 p-2 rounded-full">

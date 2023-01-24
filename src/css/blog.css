@@ -1,0 +1,13 @@
+.blog-details {
+  margin: 50px 0;
+  padding: 0 20%;
+}
+.blog-image-container {
+  text-align: center;
+}
+.blog-image {
+  text-align: center;
+}
+.tag {
+  border: 1px solid g;
+}
