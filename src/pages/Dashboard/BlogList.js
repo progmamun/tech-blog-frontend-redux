@@ -2,10 +2,11 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { BsPencilSquare } from "react-icons/bs";
+import { removeBlogThunk } from "../../redux/thunks/blogThunk";
 
 const BlogList = () => {
   const navigate = useNavigate();
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
   const blogs = useSelector((state) => state.blog.blogs);
 
   if (!blogs.length) {
@@ -58,7 +59,7 @@ const BlogList = () => {
                   </td>
                   <td className="p-2">
                     <div className="flex justify-center">
-                      <button>
+                      <button onClick={() => dispatch(removeBlogThunk(_id))}>
                         <svg
                           className="w-8 h-8 hover:text-blue-600 rounded-full hover:bg-gray-100 p-1"
                           fill="none"
