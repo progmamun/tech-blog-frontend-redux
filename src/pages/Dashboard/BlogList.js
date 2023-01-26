@@ -50,7 +50,9 @@ const BlogList = () => {
                     <div className="font-medium text-gray-800">{name}</div>
                   </td>
                   <td className="p-2">
-                    <div className="text-left capitalize">{tags[0]}</div>
+                    <div className="text-left capitalize">
+                      {tags ? tags[0] : ""}
+                    </div>
                   </td>
                   <td className="p-2">
                     <div className="text-left font-medium text-indigo-500">

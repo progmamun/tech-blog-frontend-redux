@@ -1,6 +1,7 @@
 import { addBlog, loaded, removeBlog } from "../actions/blogAction";
 
-const URL = "http://127.0.0.1:5000";
+// const URL = "http://127.0.0.1:5000";
+const URL = "https://technical-blog-server-redux.vercel.app";
 
 export const getBlogsThunk = () => {
   return async (dispatch, getState) => {
